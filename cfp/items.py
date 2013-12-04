@@ -7,5 +7,8 @@ from scrapy.item import Item, Field
 
 class CfpItem(Item):
     # define the fields for your item here like:
-    # name = Field()
-    pass
+    name = Field()
+    url = Field()
+    dline = Field()
+    date = Field()
+    location = Field() 
