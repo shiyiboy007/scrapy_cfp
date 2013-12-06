@@ -13,3 +13,12 @@ NEWSPIDER_MODULE = 'cfp.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'cfp (+http://www.yourdomain.com)'
+
+TEM_PIPELINES = [
+  'scrapy_mongodb.MongoDBPipeline',
+]
+
+MONGODB_URI = 'mongodb://localhost:27017'
+MONGODB_DATABASE = 'scrapy'
+MONGODB_COLLECTION = 'cfps'
+MONGODB_UNIQUE_KEY = 'event-name'
