@@ -14,7 +14,7 @@ def check():
     "Check that we are in a project"
     # check that that we are in a crawling project
     for filename in CONF_FILES:
-        msg = ("\n  You're not in a crawling project '{}' file is missing\n"
+        msg = ("\n  You're not in a crawling project {} file is missing\n"
                "  Please initialize a project first\n")
         if not os.path.isfile(filename):
             print msg.format(filename)
@@ -38,4 +38,4 @@ class Config(object):
         self.argline.add_section('argline')
 
         queryfilename = CONF_FILES
-        self.query.read(cybername)
+        self.query.read(queryfilename)

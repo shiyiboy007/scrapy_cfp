@@ -11,3 +11,8 @@ Activate syntax coloring in vim:
 ==> echo "syntax on" >> $HOME/.vimrc
 Install Ipython in virtualenv used so that scrapy shell will use it instead:
 ==> pip install ipython
+
+#Libraries used
+Scrapy-mongodb : https://github.com/sebdah/scrapy-mongodb
+This module is included in cfp directory; setting.py under the project is modified consequently
+
