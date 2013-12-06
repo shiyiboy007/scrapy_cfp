@@ -8,8 +8,8 @@
 
 BOT_NAME = 'cfp'
 
-SPIDER_MODULES = ['cfp.spiders']
-NEWSPIDER_MODULE = 'cfp.spiders'
+SPIDER_MODULES = ['scrapy_cfp.spiders']
+NEWSPIDER_MODULE = 'scrapy_cfp.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'cfp (+http://www.yourdomain.com)'
